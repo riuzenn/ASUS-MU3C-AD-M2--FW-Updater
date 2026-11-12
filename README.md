@@ -25,8 +25,8 @@ In principle, one could try adding the following formats to the descriptors:
 - 16-bit/192 kHz stereo  
 - 32-bit/96 kHz stereo
 The endpoint maximum packet size must also be updated accordingly. The calculation is:  
-channels × bit depth × sample rate ÷ 1000 ÷ 8 + channels × bit depth ÷ 8, taking the packet size required by the highest format.
-In practice: I tried to add 16/192, but it didn't work in Exclusive Mode: the music player reported that playback failed because the device could not be opened. The latter (32/96) was not tested.
+channels × bit depth × sample rate ÷ 1000 ÷ 8 + channels × bit depth ÷ 8, taking the packet size required by the highest format.  
+In practice: I tried to add 16/192, but it didn't work in Exclusive Mode: the music player reported that playback failed because the device could not be opened. The latter (32/96) was not tested.  
 <div align="center"><img src="./images/192khz.jpg"></div>  
 
 
