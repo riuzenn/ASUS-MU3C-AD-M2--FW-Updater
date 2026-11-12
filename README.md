@@ -1,5 +1,8 @@
-# ASUS-MU3C-AD-M2--FW-Updater
-A patched ASUS MU3C AD (M2) firmware based on v3.6.14.
+# ASUS-MU3C-AD-M2--FW-Updater  
+A patched ASUS MU3C AD (M2) firmware based on v3.6.14.  
+## How to update?  
+Download [ASUS-MU3C-AD(M2)-FW-Updater.zip](https://github.com/riuzenn/ASUS-MU3C-AD-M2--FW-Updater/blob/main/ASUS-MU3C-AD(M2)-FW-Updater.zip), unzip it, and run ESS_SuiteFW.exe.  
+or Download [ES9260_3.6.15_EXT.rom](https://github.com/riuzenn/ASUS-MU3C-AD-M2--FW-Updater/blob/main/ES9260_3.6.15_EXT.rom)，then move it to AppData.  
 ## This patch mainly provides three improvements, at the cost of 16-bit recording at 24 kHz and 48 kHz while retaining 24-bit recording support:  
 ◉Enables volume control when the ASUS dongle is connected to Apple devices or when Exclusive Mode is enabled.  
 ◉ Set `bMaxPower` to 0x32 (50 × 2 mA = 100 mA; previously 0) to avoid potential compatibility issues on systems with strict power management.  
