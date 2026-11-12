@@ -1,8 +1,9 @@
 # ASUS-MU3C-AD-M2--FW-Updater  
 A patched ASUS MU3C AD (M2) firmware based on v3.6.14.  
-## How to update?  
+## How to use?  
 Download [ASUS-MU3C-AD(M2)-FW-Updater.zip](https://github.com/riuzenn/ASUS-MU3C-AD-M2--FW-Updater/blob/main/ASUS-MU3C-AD(M2)-FW-Updater.zip), unzip it, and run ESS_SuiteFW.exe.  
-or Download [ES9260_3.6.15_EXT.rom](https://github.com/riuzenn/ASUS-MU3C-AD-M2--FW-Updater/blob/main/ES9260_3.6.15_EXT.rom)，then move it to AppData.  
+or Download [ES9260_3.6.15_EXT.rom](https://github.com/riuzenn/ASUS-MU3C-AD-M2--FW-Updater/blob/main/ES9260_3.6.15_EXT.rom)，then move it to the AppData folder.  
+## See [华硕小尾巴MU3C-AD(M2)玩机总结](https://www.bilibili.com/opus/1269802210612477976) for documentation of the patching and flashing process.  
 ## This patch mainly provides three improvements, at the cost of 16-bit recording at 24 kHz and 48 kHz while retaining 24-bit recording support:  
 ◉Enables volume control when the ASUS dongle is connected to Apple devices or when Exclusive Mode is enabled.  
 ◉ Set `bMaxPower` to 0x32 (50 × 2 mA = 100 mA; previously 0) to avoid potential compatibility issues on systems with strict power management.  
@@ -11,7 +12,6 @@ or Download [ES9260_3.6.15_EXT.rom](https://github.com/riuzenn/ASUS-MU3C-AD-M2--
 - 44.1 kHz and 88.2 kHz stereo for 24-bit playback
 <div align="center"><img src="./images/DAC capabilities in 4-pole 3.5 mm plug mode.jpg"></div>  
 
-## See [华硕小尾巴MU3C-AD(M2)玩机总结](https://www.bilibili.com/opus/1269802210612477976) for documentation of the patching and flashing process.  
 ## The 24-bit/96 kHz ceiling of the ASUS MU3C AD (M2) is primarily a limitation of the integrated USB 1.1 bridge—not a lack of DAC capability and not a deliberate firmware limitation.  
 ### 1. Capability mismatch: strong DAC, weak USB bridge  
 - The ES9260Q’s DAC module supports 32-bit/384 kHz PCM and DSD256.
